@@ -334,6 +334,7 @@
 
 /* Begin PBXFileReference section */
 		03B205932CF0735000B29245 /* SmashVideos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmashVideos.xcdatamodel; sourceTree = "<group>"; };
+		03F0E1372CF74A5F00C2860F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F95B9A2CF17B51005F909F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03F95B9D2CF2E4F8005F909F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		040A6AF92C26D963008BF80C /* LikesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
@@ -2096,7 +2097,6 @@
 				FD806C68F16140EE0F33ABAD /* Pods-Moves.debug.xcconfig */,
 				190AECD0D1B83B575E596E10 /* Pods-Moves.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -2241,6 +2241,7 @@
 			children = (
 				04A663C32CCC0BC20049C94A /* Animation */,
 				04196A6A2C16B61900747E77 /* VideoSmash.entitlements */,
+				03F0E1372CF74A5F00C2860F /* Info.plist */,
 				5A7FA2F02C83270C00A05C6D /* UIDevice */,
 				040CB54A2C736C7400DA6490 /* CoreData */,
 				04B275432C15DE46007B2722 /* API */,
@@ -3082,7 +3083,7 @@
 					/usr/lib/swift,
 					"$(SDKROOT)/usr/lib/swift",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -3734,7 +3735,7 @@
 					/usr/lib/swift,
 					"$(SDKROOT)/usr/lib/swift",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",

@@ -8,6 +8,7 @@ ${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework
 ${BUILT_PRODUCTS_DIR}/CoreAnimator/CoreAnimator.framework
 ${BUILT_PRODUCTS_DIR}/DPOTPView/DPOTPView.framework
 ${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework
+${BUILT_PRODUCTS_DIR}/EFInternetIndicator/EFInternetIndicator.framework
 ${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework
 ${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework
 ${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework
@@ -50,7 +51,9 @@ ${BUILT_PRODUCTS_DIR}/RecaptchaInterop/RecaptchaInterop.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework
+${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
 ${BUILT_PRODUCTS_DIR}/SwiftVideoGenerator/SwiftVideoGenerator.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework
 ${BUILT_PRODUCTS_DIR}/TextFieldFormatter/TextFieldFormatter.framework

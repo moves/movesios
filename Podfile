@@ -1,95 +1,64 @@
 platform :ios, '14.0'
 
+project 'Moves.xcodeproj' # Ensure this matches your Xcode project file name
+
 target 'Moves' do
   use_frameworks!
-  project 'Moves.xcodeproj'
-  
-  # Core dependencies
+
+  # Pods for Moves
   pod 'SDWebImage', '~> 5.0'
   pod 'DPOTPView'
   pod 'PhoneNumberKit', '~> 3.7'
   pod 'Toast-Swift', '~> 5.1.1'
-  pod 'Alamofire'
-
-  # Firebase dependencies
   pod 'FirebaseFunctions'
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'FirebaseStorage'
   pod 'FirebaseDatabase'
-  pod 'FirebaseMessaging'
-
-  # Google and Facebook SDKs
+  pod 'FirebaseAnalytics'
+  pod 'FBSDKLoginKit'
   pod 'GoogleSignIn'
-  pod 'GoogleMaps'
-  pod 'GooglePlaces'
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
-
-  # Media and Animation
+  pod 'FirebaseMessaging'
+  pod 'SVProgressHUD'
   pod 'SwiftVideoGenerator'
   pod 'GSPlayer'
   pod 'NextLevel', '~> 0.16.3'
   pod 'YPImagePicker'
-  pod 'PryntTrimmerView'
-  pod 'CoreAnimator'
-  pod 'lottie-ios'
-
-  # UI Enhancements
-  pod 'SVProgressHUD'
-  pod 'GrowingTextView', '0.7.2'
-  pod 'SkeletonView'
-  pod 'BadgeControl'
-  pod 'GTProgressBar'
-  pod 'TextFieldFormatter'
-  pod 'MarqueeLabel'
-  pod 'JXSegmentedView'
-  pod 'DZNEmptyDataSet'
-
-  # Video and Cache
-  pod 'ZFPlayer'
-  pod 'ZFPlayer/ControlView'
-  pod 'KTVHTTPCache'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
   pod 'QCropper'
-
-  # Debugging
+  pod 'GrowingTextView', '0.7.2'
+  pod 'GTProgressBar'
+  pod 'CoreAnimator'
+  pod 'SnapKit'
+  pod 'SkeletonView'
+  pod 'TextFieldFormatter'
+  pod 'BadgeControl'
+  pod 'MarqueeLabel'
+  pod 'EFInternetIndicator'
   pod 'CocoaDebug', :configurations => ['Debug']
-
-  # Miscellaneous
+  pod 'JXSegmentedView'
+  pod 'Alamofire'
   pod 'MJRefresh'
+  pod 'DZNEmptyDataSet'
+  pod 'ZFPlayer'
+  pod 'KTVHTTPCache'
+  pod 'ZFPlayer/ControlView'
+  pod 'PryntTrimmerView'
   pod 'ZoomingTransition'
   pod 'SwiftyStoreKit'
   pod 'AgoraRtcEngine_iOS'
+  pod 'Firebase'
+  pod 'lottie-ios'
 end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      # Ensure deployment target matches project
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
-
-      # Fix BoringSSL-GRPC warnings
-      if target.name == 'BoringSSL-GRPC'
-        target.source_build_phase.files.each do |file|
-          if file.settings && file.settings['COMPILER_FLAGS']
-            flags = file.settings['COMPILER_FLAGS'].split
-            flags.reject! { |flag| flag == '-GCC_WARN_INHIBIT_ALL_WARNINGS' }
-            file.settings['COMPILER_FLAGS'] = flags.join(' ')
-          end
-        end
-      end
     end
   end
 end
-
-
-#platform :ios, '12.0'
-#use_frameworks!
-#
-#project 'Moves.xcodeproj'
-#
-#target 'Moves' do
-#  pod 'Alamofire' # Example dependency
-#end
-#

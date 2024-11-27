@@ -74,6 +74,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>EFInternetIndicator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -100,6 +105,16 @@
 			<false/>
 		</dict>
 		<key>FacebookShare.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Firebase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseAnalytics.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -245,6 +260,11 @@
 			<false/>
 		</dict>
 		<key>GTProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleAppMeasurement.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -404,7 +424,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SnapKit-SnapKit_Privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SteviaLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftMessages-SwiftMessages.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftMessages.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
