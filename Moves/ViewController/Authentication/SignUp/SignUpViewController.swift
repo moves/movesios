@@ -12,6 +12,8 @@ import FirebaseCore
 import CryptoKit
 import AuthenticationServices
 import FacebookLogin
+import FacebookCore
+
 class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding, UITextViewDelegate {
     
     //MARK: - VARS
@@ -236,11 +238,39 @@ class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate,
         if sender.tag == 0 {
             self.googleFirebase()
         }else if sender.tag == 1 {
+            self.facebookSignup()
         }else {
             self.appleFirebase()
         }
     }
     
+    func facebookSignup(){
+        let manager = LoginManager()
+        manager.logIn(permissions: ["public_profile", "email"], viewController: UIApplication.shared.windows.first?.rootViewController) { result in
+            switch result {
+            case .success(let granted, let declined, let token):
+                print("Granted permissions: \(granted)")
+                print("Declined permissions: \(declined)")
+                self.fetchFacebookProfile(token: token.tokenString)
+            case .failed(let error):
+                print("Login failed: \(error.localizedDescription)")
+            case .cancelled:
+                print("Login cancelled by user.")
+            }
+        }
+    }
+    
+    func fetchFacebookProfile(token: String) {
+        let connection = GraphRequestConnection()
+        connection.add(GraphRequest(graphPath: "me", parameters: ["fields": "id, name, email"], tokenString: token, version: nil, httpMethod: .get)) { _, result, error in
+            if let error = error {
+                print("Graph Request Failed: \(error.localizedDescription)")
+            } else if let result = result as? [String: Any] {
+                print("User Info: \(result)")
+            }
+        }
+        connection.start()
+    }
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
         let phoneEmail = PhoneEmailSignInViewController(nibName: "PhoneEmailSignInViewController", bundle: nil)
         phoneEmail.hidesBottomBarWhenPushed = true
