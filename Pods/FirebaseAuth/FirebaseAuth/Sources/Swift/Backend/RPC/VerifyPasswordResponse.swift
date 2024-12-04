@@ -21,7 +21,9 @@ import Foundation
 /// * FIRAuthInternalErrorCodeEmailNotFound
 ///
 /// See https: // developers.google.com/identity/toolkit/web/reference/relyingparty/verifyPassword
-struct VerifyPasswordResponse: AuthRPCResponse, AuthMFAResponse {
+class VerifyPasswordResponse: AuthRPCResponse, AuthMFAResponse {
+  required init() {}
+
   /// The RP local ID if it's already been mapped to the IdP account identified by the federated ID.
   var localID: String?
 
@@ -51,7 +53,7 @@ struct VerifyPasswordResponse: AuthRPCResponse, AuthMFAResponse {
 
   private(set) var mfaInfo: [AuthProtoMFAEnrollment]?
 
-  mutating func setFields(dictionary: [String: AnyHashable]) throws {
+  func setFields(dictionary: [String: AnyHashable]) throws {
     localID = dictionary["localId"] as? String
     email = dictionary["email"] as? String
     displayName = dictionary["displayName"] as? String

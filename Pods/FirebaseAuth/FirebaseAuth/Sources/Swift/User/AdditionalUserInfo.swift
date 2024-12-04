@@ -49,7 +49,9 @@ extension AdditionalUserInfo: NSSecureCoding {}
   private static let usernameCodingKey = "username"
   private static let newUserKey = "newUser"
 
-  public static let supportsSecureCoding = true
+  public static var supportsSecureCoding: Bool {
+    return true
+  }
 
   public required init?(coder aDecoder: NSCoder) {
     guard let providerID = aDecoder.decodeObject(

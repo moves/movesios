@@ -14,11 +14,13 @@
 
 import Foundation
 
-struct WithdrawMFAResponse: AuthRPCResponse {
+class WithdrawMFAResponse: AuthRPCResponse {
+  required init() {}
+
   var idToken: String?
   var refreshToken: String?
 
-  mutating func setFields(dictionary: [String: AnyHashable]) throws {
+  func setFields(dictionary: [String: AnyHashable]) throws {
     idToken = dictionary["idToken"] as? String
     refreshToken = dictionary["refreshToken"] as? String
   }

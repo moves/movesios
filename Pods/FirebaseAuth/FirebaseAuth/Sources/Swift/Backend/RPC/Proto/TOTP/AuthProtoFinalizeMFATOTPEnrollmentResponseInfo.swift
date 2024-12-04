@@ -14,7 +14,7 @@
 
 import Foundation
 
-struct AuthProtoStartMFATOTPEnrollmentResponseInfo: AuthProto {
+class AuthProtoStartMFATOTPEnrollmentResponseInfo: NSObject, AuthProto {
   let sharedSecretKey: String
   let verificationCodeLength: Int
   let hashingAlgorithm: String?
@@ -22,7 +22,7 @@ struct AuthProtoStartMFATOTPEnrollmentResponseInfo: AuthProto {
   let sessionInfo: String?
   let finalizeEnrollmentTime: Date?
 
-  init(dictionary: [String: AnyHashable]) {
+  required init(dictionary: [String: AnyHashable]) {
     guard let key = dictionary["sharedSecretKey"] as? String else {
       fatalError("Missing sharedSecretKey for AuthProtoStartMFATOTPEnrollmentResponseInfo")
     }

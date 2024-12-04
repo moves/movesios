@@ -17,6 +17,8 @@ import Foundation
 /// Represents the response from the deleteAccount endpoint.
 ///
 /// See https://developers.google.com/identity/toolkit/web/reference/relyingparty/deleteAccount
-struct DeleteAccountResponse: AuthRPCResponse {
-  mutating func setFields(dictionary: [String: AnyHashable]) throws {}
+class DeleteAccountResponse: AuthRPCResponse {
+  required init() {}
+
+  func setFields(dictionary: [String: AnyHashable]) throws {}
 }

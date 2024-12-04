@@ -14,11 +14,13 @@
 
 import Foundation
 
-struct GetRecaptchaConfigResponse: AuthRPCResponse {
+class GetRecaptchaConfigResponse: AuthRPCResponse {
+  required init() {}
+
   private(set) var recaptchaKey: String?
   private(set) var enforcementState: [[String: String]]?
 
-  mutating func setFields(dictionary: [String: AnyHashable]) throws {
+  func setFields(dictionary: [String: AnyHashable]) throws {
     recaptchaKey = dictionary["recaptchaKey"] as? String
     enforcementState = dictionary["recaptchaEnforcementState"] as? [[String: String]]
   }

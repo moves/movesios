@@ -6,16 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "FirebaseAnalyticsPrivate",
-        "printedName": "FirebaseAnalyticsPrivate",
-        "declKind": "Import",
-        "moduleName": "FirebaseAnalytics",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "StoreKit",
         "printedName": "StoreKit",
         "declKind": "Import",
@@ -234,49 +224,49 @@
     {
       "filePath": "\/Volumes\/google\/src\/cloud\/tsunghung\/release\/google3\/googlemac\/iPhone\/Firebase\/Analytics\/Sources\/Swift\/Analytics+StoreKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 1320,
+      "offset": 1259,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/google\/src\/cloud\/tsunghung\/release\/google3\/googlemac\/iPhone\/Firebase\/Analytics\/Sources\/Swift\/Analytics+StoreKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 1358,
+      "offset": 1297,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/google\/src\/cloud\/tsunghung\/release\/google3\/googlemac\/iPhone\/Firebase\/Analytics\/Sources\/Swift\/Analytics+StoreKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 2584,
+      "offset": 2523,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/google\/src\/cloud\/tsunghung\/release\/google3\/googlemac\/iPhone\/Firebase\/Analytics\/Sources\/Swift\/Analytics+StoreKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 2625,
+      "offset": 2564,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/google\/src\/cloud\/tsunghung\/release\/google3\/googlemac\/iPhone\/Firebase\/Analytics\/Sources\/Swift\/Analytics+StoreKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 2668,
+      "offset": 2607,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/google\/src\/cloud\/tsunghung\/release\/google3\/googlemac\/iPhone\/Firebase\/Analytics\/Sources\/Swift\/Analytics+StoreKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 2712,
+      "offset": 2651,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/google\/src\/cloud\/tsunghung\/release\/google3\/googlemac\/iPhone\/Firebase\/Analytics\/Sources\/Swift\/Analytics+StoreKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 2744,
+      "offset": 2683,
       "length": 1,
       "value": "0"
     },

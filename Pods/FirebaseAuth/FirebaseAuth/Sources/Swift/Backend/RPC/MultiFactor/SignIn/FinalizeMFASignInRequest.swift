@@ -23,8 +23,8 @@ private let kTenantIDKey = "tenantId"
 class FinalizeMFASignInRequest: IdentityToolkitRequest, AuthRPCRequest {
   typealias Response = FinalizeMFAEnrollmentResponse
 
-  let mfaPendingCredential: String?
-  let verificationInfo: AuthProto?
+  var mfaPendingCredential: String?
+  var verificationInfo: AuthProto?
 
   init(mfaPendingCredential: String?,
        verificationInfo: AuthProto?,

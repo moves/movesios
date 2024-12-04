@@ -14,7 +14,9 @@
 
 import Foundation
 
-struct VerifyPhoneNumberResponse: AuthRPCResponse {
+class VerifyPhoneNumberResponse: AuthRPCResponse {
+  required init() {}
+
   /// Either an authorization code suitable for performing an STS token exchange, or the
   /// access token from Secure Token Service, depending on whether `returnSecureToken` is set
   /// on the request.
@@ -43,7 +45,7 @@ struct VerifyPhoneNumberResponse: AuthRPCResponse {
     nil
   }
 
-  mutating func setFields(dictionary: [String: AnyHashable]) throws {
+  func setFields(dictionary: [String: AnyHashable]) throws {
     idToken = dictionary["idToken"] as? String
     refreshToken = dictionary["refreshToken"] as? String
     isNewUser = (dictionary["isNewUser"] as? Bool) ?? false

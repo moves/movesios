@@ -24,43 +24,30 @@ class StartMFAEnrollmentRequest: IdentityToolkitRequest, AuthRPCRequest {
   typealias Response = StartMFAEnrollmentResponse
 
   let idToken: String?
-  let phoneEnrollmentInfo: AuthProtoStartMFAPhoneRequestInfo?
-  let totpEnrollmentInfo: AuthProtoStartMFATOTPEnrollmentRequestInfo?
+  private(set) var phoneEnrollmentInfo: AuthProtoStartMFAPhoneRequestInfo?
+  private(set) var totpEnrollmentInfo: AuthProtoStartMFATOTPEnrollmentRequestInfo?
 
-  convenience init(idToken: String?,
-                   enrollmentInfo: AuthProtoStartMFAPhoneRequestInfo?,
-                   requestConfiguration: AuthRequestConfiguration) {
-    self.init(
-      idToken: idToken,
-      enrollmentInfo: enrollmentInfo,
-      totpEnrollmentInfo: nil,
-      requestConfiguration: requestConfiguration
-    )
-  }
-
-  convenience init(idToken: String?,
-                   totpEnrollmentInfo: AuthProtoStartMFATOTPEnrollmentRequestInfo?,
-                   requestConfiguration: AuthRequestConfiguration) {
-    self.init(
-      idToken: idToken,
-      enrollmentInfo: nil,
-      totpEnrollmentInfo: totpEnrollmentInfo,
-      requestConfiguration: requestConfiguration
-    )
-  }
-
-  private init(idToken: String?,
-               enrollmentInfo: AuthProtoStartMFAPhoneRequestInfo?,
-               totpEnrollmentInfo: AuthProtoStartMFATOTPEnrollmentRequestInfo?,
-               requestConfiguration: AuthRequestConfiguration) {
+  init(idToken: String?,
+       enrollmentInfo: AuthProtoStartMFAPhoneRequestInfo?,
+       requestConfiguration: AuthRequestConfiguration) {
     self.idToken = idToken
     phoneEnrollmentInfo = enrollmentInfo
+    super.init(
+      endpoint: kStartMFAEnrollmentEndPoint,
+      requestConfiguration: requestConfiguration,
+      useIdentityPlatform: true
+    )
+  }
+
+  init(idToken: String?,
+       totpEnrollmentInfo: AuthProtoStartMFATOTPEnrollmentRequestInfo?,
+       requestConfiguration: AuthRequestConfiguration) {
+    self.idToken = idToken
     self.totpEnrollmentInfo = totpEnrollmentInfo
     super.init(
       endpoint: kStartMFAEnrollmentEndPoint,
       requestConfiguration: requestConfiguration,
-      useIdentityPlatform: true,
-      useStaging: false
+      useIdentityPlatform: true
     )
   }
 

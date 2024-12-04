@@ -89,19 +89,19 @@ class SetAccountInfoRequest: IdentityToolkitRequest, AuthRPCRequest {
   var displayName: String?
 
   /// The local ID of the user.
-  var localID: String? = nil
+  var localID: String?
 
   /// The email of the user.
-  var email: String? = nil
+  var email: String?
 
   /// The photoURL of the user.
   var photoURL: URL?
 
   /// The new password of the user.
-  var password: String? = nil
+  var password: String?
 
   /// The associated identity providers of the user.
-  var providers: [String]? = nil
+  var providers: [String]?
 
   /// The out-of-band code of the change email request.
   var oobCode: String?
@@ -113,16 +113,16 @@ class SetAccountInfoRequest: IdentityToolkitRequest, AuthRPCRequest {
   var upgradeToFederatedLogin: Bool = false
 
   /// The captcha challenge.
-  var captchaChallenge: String? = nil
+  var captchaChallenge: String?
 
   /// Response to the captcha.
-  var captchaResponse: String? = nil
+  var captchaResponse: String?
 
   /// The list of user attributes to delete.
   ///
   /// Every element of the list must be one of the predefined constant starts with
   /// `SetAccountInfoUserAttribute`.
-  var deleteAttributes: [String]? = nil
+  var deleteAttributes: [String]?
 
   /// The list of identity providers to delete.
   var deleteProviders: [String]?
@@ -131,8 +131,7 @@ class SetAccountInfoRequest: IdentityToolkitRequest, AuthRPCRequest {
   /// The default value is `true` .
   var returnSecureToken: Bool = true
 
-  init(accessToken: String? = nil, requestConfiguration: AuthRequestConfiguration) {
-    self.accessToken = accessToken
+  init(requestConfiguration: AuthRequestConfiguration) {
     super.init(endpoint: kSetAccountInfoEndpoint, requestConfiguration: requestConfiguration)
   }
 

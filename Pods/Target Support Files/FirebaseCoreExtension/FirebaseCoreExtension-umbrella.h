@@ -18,6 +18,7 @@
 #import "FIRHeartbeatLogger.h"
 #import "FIRLibrary.h"
 #import "FIRLogger.h"
+#import "FIROptionsInternal.h"
 
 FOUNDATION_EXPORT double FirebaseCoreExtensionVersionNumber;
 FOUNDATION_EXPORT const unsigned char FirebaseCoreExtensionVersionString[];

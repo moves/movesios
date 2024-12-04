@@ -14,8 +14,8 @@
 
 import Foundation
 
-struct VerifyClientResponse: AuthRPCResponse {
-  init() {}
+class VerifyClientResponse: AuthRPCResponse {
+  required init() {}
 
   /// Receipt that the APNS token was successfully validated with APNS.
   private(set) var receipt: String?
@@ -23,7 +23,7 @@ struct VerifyClientResponse: AuthRPCResponse {
   /// The date after which delivery of the silent push notification is considered to have failed.
   private(set) var suggestedTimeOutDate: Date?
 
-  mutating func setFields(dictionary: [String: AnyHashable]) throws {
+  func setFields(dictionary: [String: AnyHashable]) throws {
     receipt = dictionary["receipt"] as? String
     let suggestedTimeout = dictionary["suggestedTimeout"]
     if let string = suggestedTimeout as? String,

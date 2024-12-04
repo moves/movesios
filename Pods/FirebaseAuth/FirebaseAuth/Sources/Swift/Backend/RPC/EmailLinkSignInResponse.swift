@@ -15,7 +15,9 @@
 import Foundation
 
 /// Represents the response from the emailLinkSignin endpoint.
-struct EmailLinkSignInResponse: AuthRPCResponse, AuthMFAResponse {
+class EmailLinkSignInResponse: AuthRPCResponse, AuthMFAResponse {
+  required init() {}
+
   /// The ID token in the email link sign-in response.
   private(set) var idToken: String?
 
@@ -40,7 +42,7 @@ struct EmailLinkSignInResponse: AuthRPCResponse, AuthMFAResponse {
   /// Info on which multi-factor authentication providers are enabled.
   private(set) var mfaInfo: [AuthProtoMFAEnrollment]?
 
-  mutating func setFields(dictionary: [String: AnyHashable]) throws {
+  func setFields(dictionary: [String: AnyHashable]) throws {
     email = dictionary["email"] as? String
     idToken = dictionary["idToken"] as? String
     isNewUser = dictionary["isNewUser"] as? Bool ?? false

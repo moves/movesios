@@ -20,8 +20,7 @@
 #import "FirebaseCore/Extension/FIRComponent.h"
 #import "FirebaseCore/Extension/FIRLibrary.h"
 #import "FirebaseCore/Extension/FIRLogger.h"
-#import "FirebaseCore/Sources/FIROptionsInternal.h"
-#import "FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h"
+#import "FirebaseCore/Extension/FIROptionsInternal.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

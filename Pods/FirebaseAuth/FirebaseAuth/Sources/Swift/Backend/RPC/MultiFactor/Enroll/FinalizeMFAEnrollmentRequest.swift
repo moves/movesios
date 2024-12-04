@@ -27,47 +27,33 @@ class FinalizeMFAEnrollmentRequest: IdentityToolkitRequest, AuthRPCRequest {
 
   let displayName: String?
 
-  let phoneVerificationInfo: AuthProtoFinalizeMFAPhoneRequestInfo?
+  var phoneVerificationInfo: AuthProtoFinalizeMFAPhoneRequestInfo?
 
-  let totpVerificationInfo: AuthProtoFinalizeMFATOTPEnrollmentRequestInfo?
+  var totpVerificationInfo: AuthProtoFinalizeMFATOTPEnrollmentRequestInfo?
 
-  convenience init(idToken: String?, displayName: String?,
-                   phoneVerificationInfo: AuthProtoFinalizeMFAPhoneRequestInfo?,
-                   requestConfiguration: AuthRequestConfiguration) {
-    self.init(
-      idToken: idToken,
-      displayName: displayName,
-      phoneVerificationInfo: phoneVerificationInfo,
-      totpVerificationInfo: nil,
-      requestConfiguration: requestConfiguration
-    )
-  }
-
-  convenience init(idToken: String?, displayName: String?,
-                   totpVerificationInfo: AuthProtoFinalizeMFATOTPEnrollmentRequestInfo?,
-                   requestConfiguration: AuthRequestConfiguration) {
-    self.init(
-      idToken: idToken,
-      displayName: displayName,
-      phoneVerificationInfo: nil,
-      totpVerificationInfo: totpVerificationInfo,
-      requestConfiguration: requestConfiguration
-    )
-  }
-
-  private init(idToken: String?, displayName: String?,
-               phoneVerificationInfo: AuthProtoFinalizeMFAPhoneRequestInfo?,
-               totpVerificationInfo: AuthProtoFinalizeMFATOTPEnrollmentRequestInfo?,
-               requestConfiguration: AuthRequestConfiguration) {
+  init(idToken: String?, displayName: String?,
+       phoneVerificationInfo: AuthProtoFinalizeMFAPhoneRequestInfo?,
+       requestConfiguration: AuthRequestConfiguration) {
     self.idToken = idToken
     self.displayName = displayName
     self.phoneVerificationInfo = phoneVerificationInfo
+    super.init(
+      endpoint: kFinalizeMFAEnrollmentEndPoint,
+      requestConfiguration: requestConfiguration,
+      useIdentityPlatform: true
+    )
+  }
+
+  init(idToken: String?, displayName: String?,
+       totpVerificationInfo: AuthProtoFinalizeMFATOTPEnrollmentRequestInfo?,
+       requestConfiguration: AuthRequestConfiguration) {
+    self.idToken = idToken
+    self.displayName = displayName
     self.totpVerificationInfo = totpVerificationInfo
     super.init(
       endpoint: kFinalizeMFAEnrollmentEndPoint,
       requestConfiguration: requestConfiguration,
-      useIdentityPlatform: true,
-      useStaging: false
+      useIdentityPlatform: true
     )
   }
 
@@ -78,11 +64,11 @@ class FinalizeMFAEnrollmentRequest: IdentityToolkitRequest, AuthRPCRequest {
     }
     if let displayName = displayName {
       body["displayName"] = displayName
-    }
-    if let phoneVerificationInfo {
-      body["phoneVerificationInfo"] = phoneVerificationInfo.dictionary
-    } else if let totpVerificationInfo {
-      body["totpVerificationInfo"] = totpVerificationInfo.dictionary
+      if let phoneVerificationInfo {
+        body["phoneVerificationInfo"] = phoneVerificationInfo.dictionary
+      } else if let totpVerificationInfo {
+        body["totpVerificationInfo"] = totpVerificationInfo.dictionary
+      }
     }
 
     if let tenantID = tenantID {

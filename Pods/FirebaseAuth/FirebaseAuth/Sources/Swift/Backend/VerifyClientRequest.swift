@@ -39,10 +39,10 @@ class VerifyClientRequest: IdentityToolkitRequest, AuthRPCRequest {
   }
 
   /// The APNS device token.
-  let appToken: String?
+  private(set) var appToken: String?
 
   /// The flag that denotes if the appToken  pertains to Sandbox or Production.
-  let isSandbox: Bool
+  private(set) var isSandbox: Bool
 
   init(withAppToken appToken: String?,
        isSandbox: Bool,

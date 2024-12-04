@@ -49,9 +49,8 @@ actor UserProfileUpdate {
 
   func unlink(user: User, fromProvider provider: String) async throws -> User {
     let accessToken = try await user.internalGetTokenAsync()
-    let request = SetAccountInfoRequest(
-      accessToken: accessToken, requestConfiguration: user.requestConfiguration
-    )
+    let request = SetAccountInfoRequest(requestConfiguration: user.requestConfiguration)
+    request.accessToken = accessToken
 
     if user.providerDataRaw[provider] == nil {
       throw AuthErrorUtils.noSuchProviderError()
@@ -101,7 +100,7 @@ actor UserProfileUpdate {
   /// atomically in regards to other calls to this method.
   /// - Parameter changeBlock: A block responsible for mutating a template `SetAccountInfoRequest`
   func executeUserUpdateWithChanges(user: User,
-                                    changeBlock: @escaping (GetAccountInfoResponse.User,
+                                    changeBlock: @escaping (GetAccountInfoResponseUser,
                                                             SetAccountInfoRequest)
                                       -> Void) async throws {
     let userAccountInfo = try await getAccountInfoRefreshingCache(user)
@@ -109,10 +108,8 @@ actor UserProfileUpdate {
 
     // Mutate setAccountInfoRequest in block
     let setAccountInfoRequest =
-      SetAccountInfoRequest(
-        accessToken: accessToken,
-        requestConfiguration: user.requestConfiguration
-      )
+      SetAccountInfoRequest(requestConfiguration: user.requestConfiguration)
+    setAccountInfoRequest.accessToken = accessToken
     changeBlock(userAccountInfo, setAccountInfoRequest)
     do {
       let accountInfoResponse = try await AuthBackend.call(with: setAccountInfoRequest)
@@ -179,7 +176,7 @@ actor UserProfileUpdate {
   /// - Parameter callback: Invoked when the request to getAccountInfo has completed, or when an
   /// error has been detected. Invoked asynchronously on the auth global work queue in the future.
   func getAccountInfoRefreshingCache(_ user: User) async throws
-    -> GetAccountInfoResponse.User {
+    -> GetAccountInfoResponseUser {
     let token = try await user.internalGetTokenAsync()
     let request = GetAccountInfoRequest(accessToken: token,
                                         requestConfiguration: user.requestConfiguration)

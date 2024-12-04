@@ -135,7 +135,7 @@ enum FunctionsConstants {
   /// - Parameter name: The name of the Callable HTTPS trigger.
   /// - Returns: A reference to a Callable HTTPS trigger.
   @objc(HTTPSCallableWithName:) open func httpsCallable(_ name: String) -> HTTPSCallable {
-    HTTPSCallable(functions: self, url: functionURL(for: name)!)
+    return HTTPSCallable(functions: self, name: name)
   }
 
   /// Creates a reference to the Callable HTTPS trigger with the given name and configuration
@@ -147,7 +147,7 @@ enum FunctionsConstants {
   @objc(HTTPSCallableWithName:options:) public func httpsCallable(_ name: String,
                                                                   options: HTTPSCallableOptions)
     -> HTTPSCallable {
-    HTTPSCallable(functions: self, url: functionURL(for: name)!, options: options)
+    return HTTPSCallable(functions: self, name: name, options: options)
   }
 
   /// Creates a reference to the Callable HTTPS trigger with the given name.
@@ -369,47 +369,46 @@ enum FunctionsConstants {
               appCheck: appCheck)
   }
 
-  func functionURL(for name: String) -> URL? {
+  func urlWithName(_ name: String) -> String {
     assert(!name.isEmpty, "Name cannot be empty")
 
     // Check if we're using the emulator
     if let emulatorOrigin {
-      return URL(string: "\(emulatorOrigin)/\(projectID)/\(region)/\(name)")
+      return "\(emulatorOrigin)/\(projectID)/\(region)/\(name)"
     }
 
     // Check the custom domain.
     if let customDomain {
-      return URL(string: "\(customDomain)/\(name)")
+      return "\(customDomain)/\(name)"
     }
 
-    return URL(string: "https://\(region)-\(projectID).cloudfunctions.net/\(name)")
+    return "https://\(region)-\(projectID).cloudfunctions.net/\(name)"
   }
 
-  @available(iOS 13, macCatalyst 13, macOS 10.15, tvOS 13, watchOS 7, *)
-  func callFunction(at url: URL,
+  func callFunction(name: String,
                     withObject data: Any?,
                     options: HTTPSCallableOptions?,
-                    timeout: TimeInterval) async throws -> HTTPSCallableResult {
-    let context = try await contextProvider.context(options: options)
-    let fetcher = try makeFetcher(
-      url: url,
-      data: data,
-      options: options,
-      timeout: timeout,
-      context: context
-    )
-
-    do {
-      let rawData = try await fetcher.beginFetch()
-      return try callableResultFromResponse(data: rawData, error: nil)
-    } catch {
-      // This method always throws when `error` is not `nil`, but ideally,
-      // it should be refactored so it looks less confusing.
-      return try callableResultFromResponse(data: nil, error: error)
+                    timeout: TimeInterval,
+                    completion: @escaping ((Result<HTTPSCallableResult, Error>) -> Void)) {
+    // Get context first.
+    contextProvider.getContext(options: options) { context, error in
+      // Note: context is always non-nil since some checks could succeed, we're only failing if
+      // there's an error.
+      if let error {
+        completion(.failure(error))
+      } else {
+        let url = self.urlWithName(name)
+        self.callFunction(url: URL(string: url)!,
+                          withObject: data,
+                          options: options,
+                          timeout: timeout,
+                          context: context,
+                          completion: completion)
+      }
     }
   }
 
-  func callFunction(at url: URL,
+  func callFunction(url: URL,
                     withObject data: Any?,
                     options: HTTPSCallableOptions?,
                     timeout: TimeInterval,
@@ -437,53 +436,23 @@ enum FunctionsConstants {
                             timeout: TimeInterval,
                             context: FunctionsContext,
                             completion: @escaping ((Result<HTTPSCallableResult, Error>) -> Void)) {
-    let fetcher: GTMSessionFetcher
+    let request = URLRequest(url: url,
+                             cachePolicy: .useProtocolCachePolicy,
+                             timeoutInterval: timeout)
+    let fetcher = fetcherService.fetcher(with: request)
+
     do {
-      fetcher = try makeFetcher(
-        url: url,
-        data: data,
-        options: options,
-        timeout: timeout,
-        context: context
-      )
+      let data = data ?? NSNull()
+      let encoded = try serializer.encode(data)
+      let body = ["data": encoded]
+      let payload = try JSONSerialization.data(withJSONObject: body)
+      fetcher.bodyData = payload
     } catch {
       DispatchQueue.main.async {
         completion(.failure(error))
       }
       return
     }
-
-    fetcher.beginFetch { [self] data, error in
-      let result: Result<HTTPSCallableResult, any Error>
-      do {
-        result = try .success(callableResultFromResponse(data: data, error: error))
-      } catch {
-        result = .failure(error)
-      }
-
-      DispatchQueue.main.async {
-        completion(result)
-      }
-    }
-  }
-
-  private func makeFetcher(url: URL,
-                           data: Any?,
-                           options: HTTPSCallableOptions?,
-                           timeout: TimeInterval,
-                           context: FunctionsContext) throws -> GTMSessionFetcher {
-    let request = URLRequest(
-      url: url,
-      cachePolicy: .useProtocolCachePolicy,
-      timeoutInterval: timeout
-    )
-    let fetcher = fetcherService.fetcher(with: request)
-
-    let data = data ?? NSNull()
-    let encoded = try serializer.encode(data)
-    let body = ["data": encoded]
-    let payload = try JSONSerialization.data(withJSONObject: body)
-    fetcher.bodyData = payload
 
     // Set the headers.
     fetcher.setRequestValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -516,27 +485,33 @@ enum FunctionsConstants {
       fetcher.allowedInsecureSchemes = ["http"]
     }
 
-    return fetcher
+    fetcher.beginFetch { [self] data, error in
+      let result: Result<HTTPSCallableResult, any Error>
+      do {
+        let data = try responseData(data: data, error: error)
+        let json = try responseDataJSON(from: data)
+        // TODO: Refactor `decode(_:)` so it either returns a non-optional object or throws
+        let payload = try serializer.decode(json)
+        // TODO: Remove `as Any` once `decode(_:)` is refactored
+        result = .success(HTTPSCallableResult(data: payload as Any))
+      } catch {
+        result = .failure(error)
+      }
+
+      DispatchQueue.main.async {
+        completion(result)
+      }
+    }
   }
 
-  private func callableResultFromResponse(data: Data?,
-                                          error: (any Error)?) throws -> HTTPSCallableResult {
-    let processedData = try processedResponseData(from: data, error: error)
-    let json = try responseDataJSON(from: processedData)
-    // TODO: Refactor `decode(_:)` so it either returns a non-optional object or throws
-    let payload = try serializer.decode(json)
-    // TODO: Remove `as Any` once `decode(_:)` is refactored
-    return HTTPSCallableResult(data: payload as Any)
-  }
-
-  private func processedResponseData(from data: Data?, error: (any Error)?) throws -> Data {
+  private func responseData(data: Data?, error: (any Error)?) throws -> Data {
     // Case 1: `error` is not `nil` -> always throws
     if let error = error as NSError? {
       let localError: (any Error)?
       if error.domain == kGTMSessionFetcherStatusDomain {
         localError = FunctionsError(
           httpStatusCode: error.code,
-          body: data ?? error.userInfo["data"] as? Data,
+          body: data,
           serializer: serializer
         )
       } else if error.domain == NSURLErrorDomain, error.code == NSURLErrorTimedOut {

@@ -15,7 +15,9 @@
 import Foundation
 
 /// Represents the response from the verifyCustomToken endpoint.
-struct VerifyCustomTokenResponse: AuthRPCResponse {
+class VerifyCustomTokenResponse: AuthRPCResponse {
+  required init() {}
+
   /// Either an authorization code suitable for performing an STS token exchange, or the
   /// access token from Secure Token Service, depending on whether `returnSecureToken` is set
   /// on the request.
@@ -30,7 +32,7 @@ struct VerifyCustomTokenResponse: AuthRPCResponse {
   /// Flag indicating that the user signing in is a new user and not a returning user.
   var isNewUser: Bool = false
 
-  mutating func setFields(dictionary: [String: AnyHashable]) throws {
+  func setFields(dictionary: [String: AnyHashable]) throws {
     idToken = dictionary["idToken"] as? String
     if let dateString = dictionary["expiresIn"] as? NSString {
       approximateExpirationDate = Date(timeIntervalSinceNow: dateString.doubleValue)

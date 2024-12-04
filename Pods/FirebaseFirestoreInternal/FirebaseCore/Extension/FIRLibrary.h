@@ -14,9 +14,6 @@
  * limitations under the License.
  */
 
-#ifndef FIREBASECORE_FIRLIBRARY_H
-#define FIREBASECORE_FIRLIBRARY_H
-
 #ifndef FIRLibrary_h
 #define FIRLibrary_h
 
@@ -40,5 +37,3 @@ NS_SWIFT_NAME(Library)
 NS_ASSUME_NONNULL_END
 
 #endif /* FIRLibrary_h */
-
-#endif  // FIREBASECORE_FIRLIBRARY_H

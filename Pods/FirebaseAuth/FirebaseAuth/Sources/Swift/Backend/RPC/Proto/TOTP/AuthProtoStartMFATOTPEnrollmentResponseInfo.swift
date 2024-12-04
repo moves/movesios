@@ -14,9 +14,10 @@
 
 import Foundation
 
-// TODO(ncooke3): This implementation looks useless?
-struct AuthProtoFinalizeMFATOTPEnrollmentResponseInfo: AuthProto {
+class AuthProtoFinalizeMFATOTPEnrollmentResponseInfo: NSObject, AuthProto {
   var sessionInfo: String?
 
-  init(dictionary: [String: AnyHashable]) {}
+  required init(dictionary: [String: AnyHashable]) {
+    super.init()
+  }
 }

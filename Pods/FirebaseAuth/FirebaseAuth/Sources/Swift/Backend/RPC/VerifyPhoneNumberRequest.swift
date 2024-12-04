@@ -61,76 +61,52 @@ class VerifyPhoneNumberRequest: IdentityToolkitRequest, AuthRPCRequest {
   typealias Response = VerifyPhoneNumberResponse
 
   /// The verification ID obtained from the response of `sendVerificationCode`.
-  let verificationID: String?
+  var verificationID: String?
 
   /// The verification code provided by the user.
-  let verificationCode: String?
+  var verificationCode: String?
 
   /// The STS Access Token for the authenticated user.
   var accessToken: String?
 
   /// The temporary proof code, previously returned from the backend.
-  let temporaryProof: String?
+  var temporaryProof: String?
 
   /// The phone number to be verified in the request.
-  let phoneNumber: String?
+  var phoneNumber: String?
 
   /// The type of operation triggering this verify phone number request.
-  let operation: AuthOperationType
+  var operation: AuthOperationType
 
-  /// Convenience initializer.
+  /// Designated initializer.
   /// - Parameter temporaryProof: The temporary proof sent by the backed.
   /// - Parameter phoneNumber: The phone number associated with the credential to be signed in .
   /// - Parameter operation: Indicates what operation triggered the verify phone number request.
   /// - Parameter requestConfiguration: An object containing configurations to be added to the
   /// request.
-  convenience init(temporaryProof: String, phoneNumber: String, operation: AuthOperationType,
-                   requestConfiguration: AuthRequestConfiguration) {
-    self.init(
-      temporaryProof: temporaryProof,
-      phoneNumber: phoneNumber,
-      verificationID: nil,
-      verificationCode: nil,
-      operation: operation,
-      requestConfiguration: requestConfiguration
-    )
+  init(temporaryProof: String, phoneNumber: String, operation: AuthOperationType,
+       requestConfiguration: AuthRequestConfiguration) {
+    self.temporaryProof = temporaryProof
+    self.phoneNumber = phoneNumber
+    self.operation = operation
+    super.init(endpoint: kVerifyPhoneNumberEndPoint, requestConfiguration: requestConfiguration)
   }
 
-  /// Convenience initializer.
+  /// Designated initializer.
   /// - Parameter verificationID: The verification ID obtained from the response of
   /// `sendVerificationCode`.
   /// - Parameter verificationCode: The verification code provided by the user.
   /// - Parameter operation: Indicates what operation triggered the verify phone number request.
   /// - Parameter requestConfiguration: An object containing configurations to be added to the
   /// request.
-  convenience init(verificationID: String,
-                   verificationCode: String,
-                   operation: AuthOperationType,
-                   requestConfiguration: AuthRequestConfiguration) {
-    self.init(
-      temporaryProof: nil,
-      phoneNumber: nil,
-      verificationID: verificationID,
-      verificationCode: verificationCode,
-      operation: operation,
-      requestConfiguration: requestConfiguration
-    )
-  }
-
-  private init(temporaryProof: String?, phoneNumber: String?, verificationID: String?,
-               verificationCode: String?, operation: AuthOperationType,
-               requestConfiguration: AuthRequestConfiguration) {
-    self.temporaryProof = temporaryProof
-    self.phoneNumber = phoneNumber
+  init(verificationID: String,
+       verificationCode: String,
+       operation: AuthOperationType,
+       requestConfiguration: AuthRequestConfiguration) {
     self.verificationID = verificationID
     self.verificationCode = verificationCode
     self.operation = operation
-    super.init(
-      endpoint: kVerifyPhoneNumberEndPoint,
-      requestConfiguration: requestConfiguration,
-      useIdentityPlatform: false,
-      useStaging: false
-    )
+    super.init(endpoint: kVerifyPhoneNumberEndPoint, requestConfiguration: requestConfiguration)
   }
 
   func unencodedHTTPRequestBody() throws -> [String: AnyHashable] {

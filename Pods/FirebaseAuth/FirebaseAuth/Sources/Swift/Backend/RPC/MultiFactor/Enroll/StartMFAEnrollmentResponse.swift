@@ -15,11 +15,13 @@
 import Foundation
 
 @available(iOS 13, tvOS 13, macOS 10.15, macCatalyst 13, watchOS 7, *)
-struct StartMFAEnrollmentResponse: AuthRPCResponse {
+class StartMFAEnrollmentResponse: AuthRPCResponse {
+  required init() {}
+
   private(set) var phoneSessionInfo: AuthProtoStartMFAPhoneResponseInfo?
   private(set) var totpSessionInfo: AuthProtoStartMFATOTPEnrollmentResponseInfo?
 
-  mutating func setFields(dictionary: [String: AnyHashable]) throws {
+  func setFields(dictionary: [String: AnyHashable]) throws {
     if let data = dictionary["phoneSessionInfo"] as? [String: AnyHashable] {
       phoneSessionInfo = AuthProtoStartMFAPhoneResponseInfo(dictionary: data)
     } else if let data = dictionary["totpSessionInfo"] as? [String: AnyHashable] {

@@ -51,25 +51,25 @@ class CreateAuthURIRequest: IdentityToolkitRequest, AuthRPCRequest {
   let identifier: String
 
   /// The URI to which the IDP redirects the user after the federated login flow.
-  private let continueURI: String
+  let continueURI: String
 
   /// Optional realm for OpenID protocol. The sub string "scheme://domain:port" of the param
   ///   "continueUri" is used if this is not set.
-  private let openIDRealm: String? = nil
+  var openIDRealm: String?
 
   /// The IdP ID. For white listed IdPs it's a short domain name e.g. google.com, aol.com,
   ///    live.net and yahoo.com. For other OpenID IdPs it's the OP identifier.
-  private let providerID: String? = nil
+  var providerID: String?
 
   /// The relying party OAuth client ID.
-  private let clientID: String? = nil
+  var clientID: String?
 
   /// The opaque value used by the client to maintain context info between the authentication
   ///   request and the IDP callback.
-  private let context: String? = nil
+  var context: String?
 
   /// The iOS client application's bundle identifier.
-  private let appID: String? = nil
+  var appID: String?
 
   init(identifier: String, continueURI: String,
        requestConfiguration: AuthRequestConfiguration) {

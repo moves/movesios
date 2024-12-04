@@ -29,7 +29,9 @@ private let kAccessTokenKey = "access_token"
 private let kIDTokenKey = "id_token"
 
 @available(iOS 13, tvOS 13, macOS 10.15, macCatalyst 13, watchOS 7, *)
-struct SecureTokenResponse: AuthRPCResponse {
+class SecureTokenResponse: AuthRPCResponse {
+  required init() {}
+
   var approximateExpirationDate: Date?
   var refreshToken: String?
   var accessToken: String?
@@ -37,7 +39,7 @@ struct SecureTokenResponse: AuthRPCResponse {
 
   var expectedKind: String? { nil }
 
-  mutating func setFields(dictionary: [String: AnyHashable]) throws {
+  func setFields(dictionary: [String: AnyHashable]) throws {
     refreshToken = dictionary[kRefreshTokenKey] as? String
     self.accessToken = dictionary[kAccessTokenKey] as? String
     idToken = dictionary[kIDTokenKey] as? String

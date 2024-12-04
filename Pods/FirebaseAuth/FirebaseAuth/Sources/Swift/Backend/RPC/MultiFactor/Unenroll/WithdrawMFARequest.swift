@@ -23,8 +23,8 @@ private let kTenantIDKey = "tenantId"
 class WithdrawMFARequest: IdentityToolkitRequest, AuthRPCRequest {
   typealias Response = WithdrawMFAResponse
 
-  let idToken: String?
-  let mfaEnrollmentID: String?
+  var idToken: String?
+  var mfaEnrollmentID: String?
 
   init(idToken: String?,
        mfaEnrollmentID: String?,

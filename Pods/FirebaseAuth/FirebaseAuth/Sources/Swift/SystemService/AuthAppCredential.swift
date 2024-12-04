@@ -38,7 +38,9 @@ class AuthAppCredential: NSObject, NSSecureCoding {
   private static let kReceiptKey = "receipt"
   private static let kSecretKey = "secret"
 
-  static let supportsSecureCoding = true
+  static var supportsSecureCoding: Bool {
+    true
+  }
 
   required convenience init?(coder: NSCoder) {
     guard let receipt = coder.decodeObject(of: NSString.self,

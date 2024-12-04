@@ -107,38 +107,38 @@ class GetOOBConfirmationCodeRequest: IdentityToolkitRequest, AuthRPCRequest {
   typealias Response = GetOOBConfirmationCodeResponse
 
   /// The types of OOB Confirmation Code to request.
-  private let requestType: GetOOBConfirmationCodeRequestType
+  let requestType: GetOOBConfirmationCodeRequestType
 
   /// The email of the user for password reset.
-  let email: String?
+  private(set) var email: String?
 
   /// The new email to be updated for verifyBeforeUpdateEmail.
-  private let updatedEmail: String?
+  private(set) var updatedEmail: String?
 
   /// The STS Access Token of the authenticated user for email change.
-  private let accessToken: String?
+  private(set) var accessToken: String?
 
   /// This URL represents the state/Continue URL in the form of a universal link.
-  let continueURL: String?
+  private(set) var continueURL: String?
 
   /// The iOS bundle Identifier, if available.
-  private let iOSBundleID: String?
+  private(set) var iOSBundleID: String?
 
   /// The Android package name, if available.
-  private let androidPackageName: String?
+  private(set) var androidPackageName: String?
 
   /// The minimum Android version supported, if available.
-  private let androidMinimumVersion: String?
+  private(set) var androidMinimumVersion: String?
 
   /// Indicates whether or not the Android app should be installed if not already available.
-  private let androidInstallApp: Bool
+  private(set) var androidInstallApp: Bool
 
   /// Indicates whether the action code link will open the app directly or after being
   ///   redirected from a Firebase owned web widget.
-  let handleCodeInApp: Bool
+  private(set) var handleCodeInApp: Bool
 
   /// The Firebase Dynamic Link domain used for out of band code flow.
-  private let dynamicLinkDomain: String?
+  private(set) var dynamicLinkDomain: String?
 
   /// Response to the captcha.
   var captchaResponse: String?

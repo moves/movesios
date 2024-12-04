@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03B205942CF0735000B29245 /* SmashVideos.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 03B205932CF0735000B29245 /* SmashVideos.xcdatamodel */; };
-		03F95B9F2CF2FE42005F909F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F95B9D2CF2E4F8005F909F /* GoogleService-Info.plist */; };
 		040A6AFC2C26D963008BF80C /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A6AF92C26D963008BF80C /* LikesViewController.swift */; };
 		040A6AFD2C26D963008BF80C /* LikesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040A6AFA2C26D963008BF80C /* LikesViewController.xib */; };
 		040A6B062C26EF29008BF80C /* ProfileViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040A6B052C26EF29008BF80C /* ProfileViewViewController.xib */; };
@@ -296,6 +294,9 @@
 		529725352C5D4DD50015FB83 /* SwitchAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529725332C5D4DD50015FB83 /* SwitchAccountTableViewCell.swift */; };
 		5297253A2C5D4FD90015FB83 /* switchAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529725382C5D4FD80015FB83 /* switchAccount.swift */; };
 		5297253B2C5D4FD90015FB83 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529725392C5D4FD90015FB83 /* UserObject.swift */; };
+		52C7B4F62CFF176D0058F9DC /* Moves.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52C7B4F42CFF176D0058F9DC /* Moves.xcdatamodeld */; };
+		52C7B4F82CFF1D4A0058F9DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52C7B4F72CFF1D4A0058F9DC /* GoogleService-Info.plist */; };
+		52C7B4FA2CFF314D0058F9DC /* lunch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52C7B4F92CFF314D0058F9DC /* lunch.jpg */; };
 		52D154512CA59E1700036A98 /* VideoTrimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D154502CA59E1700036A98 /* VideoTrimViewController.swift */; };
 		5A1525B22C8F3DB1001C9E7C /* EmailPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1525B12C8F3DB1001C9E7C /* EmailPasswordController.xib */; };
 		5A1525B32C8F3DB1001C9E7C /* EmailPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1525B02C8F3DB1001C9E7C /* EmailPasswordController.swift */; };
@@ -324,19 +325,15 @@
 		88CA0FF42C16E7EF00A3BA82 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CA0FF22C16E7EF00A3BA82 /* SignUpViewController.xib */; };
 		88ECBC6B2C16F8BD00B03F2C /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECBC692C16F8BD00B03F2C /* OTPViewController.swift */; };
 		88ECBC6C2C16F8BD00B03F2C /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88ECBC6A2C16F8BD00B03F2C /* OTPViewController.xib */; };
-		894616E0EA8606EE2D556112 /* Pods_Moves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B065C330D75A80E7D309BF /* Pods_Moves.framework */; };
 		B9AA459F2C14546B005EA061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA459E2C14546B005EA061 /* AppDelegate.swift */; };
 		B9AA45A12C14546B005EA061 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA45A02C14546B005EA061 /* SceneDelegate.swift */; };
 		B9AA45A62C14546B005EA061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9AA45A42C14546B005EA061 /* Main.storyboard */; };
 		B9AA45A82C14546E005EA061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9AA45A72C14546E005EA061 /* Assets.xcassets */; };
 		BF9CBF5E2C7386FA0095D99F /* Encodable+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CBF5D2C7386FA0095D99F /* Encodable+Extentions.swift */; };
+		F5DA0DD4074ED46023B05B16 /* Pods_Moves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289F702B20C72B4751C89335 /* Pods_Moves.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03B205932CF0735000B29245 /* SmashVideos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmashVideos.xcdatamodel; sourceTree = "<group>"; };
-		03F0E1372CF74A5F00C2860F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03F95B9A2CF17B51005F909F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		03F95B9D2CF2E4F8005F909F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		040A6AF92C26D963008BF80C /* LikesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
 		040A6AFA2C26D963008BF80C /* LikesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LikesViewController.xib; sourceTree = "<group>"; };
 		040A6B042C26EF29008BF80C /* ProfileViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewController.swift; sourceTree = "<group>"; };
@@ -364,7 +361,7 @@
 		0417E4622C18EB1E00953610 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		04196A662C16B5AB00747E77 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		04196A672C16B5AB00747E77 /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
-		04196A6A2C16B61900747E77 /* VideoSmash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VideoSmash.entitlements; sourceTree = "<group>"; };
+		04196A6A2C16B61900747E77 /* Moves.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Moves.entitlements; sourceTree = "<group>"; };
 		041A1E512C66A94A001C7076 /* ConstantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantManager.swift; sourceTree = "<group>"; };
 		041D0C242C938361005D4F9B /* OtherProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileViewModel.swift; sourceTree = "<group>"; };
 		0423C3E02C39318200F68274 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
@@ -612,7 +609,9 @@
 		04EEA8002C229FB2005278EA /* ShowVideoAgainstHashtagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowVideoAgainstHashtagModel.swift; sourceTree = "<group>"; };
 		04EEA8032C22A14C005278EA /* HashtagVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagVideoViewModel.swift; sourceTree = "<group>"; };
 		04EEA8052C22ACB4005278EA /* AddHashtagFavouriteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHashtagFavouriteRequest.swift; sourceTree = "<group>"; };
-		190AECD0D1B83B575E596E10 /* Pods-Moves.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moves.release.xcconfig"; path = "Target Support Files/Pods-Moves/Pods-Moves.release.xcconfig"; sourceTree = "<group>"; };
+		0A3C1140BC95ADCB7DBE6CD7 /* Pods-Moves.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moves.release.xcconfig"; path = "Target Support Files/Pods-Moves/Pods-Moves.release.xcconfig"; sourceTree = "<group>"; };
+		1BD9CDA3133FE83951A9D698 /* Pods-Moves.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moves.debug.xcconfig"; path = "Target Support Files/Pods-Moves/Pods-Moves.debug.xcconfig"; sourceTree = "<group>"; };
+		289F702B20C72B4751C89335 /* Pods_Moves.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moves.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8DC31D2C9E176200E55CF6 /* DataPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistence.swift; sourceTree = "<group>"; };
 		4F8DC31F2C9E262200E55CF6 /* DataPersisted+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataPersisted+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4F8DC3212C9E271D00E55CF6 /* DataPersisted+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataPersisted+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -627,6 +626,9 @@
 		529725332C5D4DD50015FB83 /* SwitchAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchAccountTableViewCell.swift; sourceTree = "<group>"; };
 		529725382C5D4FD80015FB83 /* switchAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = switchAccount.swift; sourceTree = "<group>"; };
 		529725392C5D4FD90015FB83 /* UserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
+		52C7B4F52CFF176D0058F9DC /* Moves.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moves.xcdatamodel; sourceTree = "<group>"; };
+		52C7B4F72CFF1D4A0058F9DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52C7B4F92CFF314D0058F9DC /* lunch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lunch.jpg; sourceTree = "<group>"; };
 		52D154502CA59E1700036A98 /* VideoTrimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTrimViewController.swift; sourceTree = "<group>"; };
 		5A1525B02C8F3DB1001C9E7C /* EmailPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPasswordController.swift; sourceTree = "<group>"; };
 		5A1525B12C8F3DB1001C9E7C /* EmailPasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailPasswordController.xib; sourceTree = "<group>"; };
@@ -644,7 +646,6 @@
 		5AD541F22C98171D0064C09A /* MPPreLoaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPPreLoaderModel.swift; sourceTree = "<group>"; };
 		5AD541F72C982CD40064C09A /* MPlayerAttributeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPlayerAttributeManager.h; sourceTree = "<group>"; };
 		5AD541F82C982CD50064C09A /* MPlayerAttributeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPlayerAttributeManager.m; sourceTree = "<group>"; };
-		86B065C330D75A80E7D309BF /* Pods_Moves.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moves.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88792A4B2C1981CB0054A88D /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		88792A4C2C1981CB0054A88D /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
 		88792A502C198A290054A88D /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
@@ -662,8 +663,8 @@
 		B9AA45A02C14546B005EA061 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B9AA45A52C14546B005EA061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9AA45A72C14546E005EA061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9AA45AC2C14546E005EA061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9CBF5D2C7386FA0095D99F /* Encodable+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extentions.swift"; sourceTree = "<group>"; };
-		FD806C68F16140EE0F33ABAD /* Pods-Moves.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moves.debug.xcconfig"; path = "Target Support Files/Pods-Moves/Pods-Moves.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -672,7 +673,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DB961B2CC1973A006DDDB5 /* StoreKit.framework in Frameworks */,
-				894616E0EA8606EE2D556112 /* Pods_Moves.framework in Frameworks */,
+				F5DA0DD4074ED46023B05B16 /* Pods_Moves.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,12 +727,12 @@
 		040CB54A2C736C7400DA6490 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				52C7B4F42CFF176D0058F9DC /* Moves.xcdatamodeld */,
 				4F8DC31D2C9E176200E55CF6 /* DataPersistence.swift */,
 				4F8DC31F2C9E262200E55CF6 /* DataPersisted+CoreDataClass.swift */,
 				4F8DC3212C9E271D00E55CF6 /* DataPersisted+CoreDataProperties.swift */,
 				04A663BB2CCBFF290049C94A /* ResponseEntity.swift */,
 				04A663BD2CCBFF380049C94A /* ResponseEntity+CoreDataProperties.swift */,
-				03B205932CF0735000B29245 /* SmashVideos.xcdatamodel */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -993,7 +994,6 @@
 		0455EFA92C14571500C8EC3E /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				03F95B9A2CF17B51005F909F /* GoogleService-Info.plist */,
 				B9AA459E2C14546B005EA061 /* AppDelegate.swift */,
 				B9AA45A02C14546B005EA061 /* SceneDelegate.swift */,
 			);
@@ -2091,15 +2091,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		2894FA5EEACA8ABC525039B7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FD806C68F16140EE0F33ABAD /* Pods-Moves.debug.xcconfig */,
-				190AECD0D1B83B575E596E10 /* Pods-Moves.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		52679F692C5AC29400BBB72E /* CircularProgressView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2155,7 +2146,7 @@
 			isa = PBXGroup;
 			children = (
 				04DB961A2CC1973A006DDDB5 /* StoreKit.framework */,
-				86B065C330D75A80E7D309BF /* Pods_Moves.framework */,
+				289F702B20C72B4751C89335 /* Pods_Moves.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2217,14 +2208,22 @@
 			path = OTP;
 			sourceTree = "<group>";
 		};
+		A06E264E6B368B752BC44183 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BD9CDA3133FE83951A9D698 /* Pods-Moves.debug.xcconfig */,
+				0A3C1140BC95ADCB7DBE6CD7 /* Pods-Moves.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B9AA45922C14546B005EA061 = {
 			isa = PBXGroup;
 			children = (
-				B9AA459D2C14546B005EA061 /* VideoSmash */,
+				B9AA459D2C14546B005EA061 /* Moves */,
 				B9AA459C2C14546B005EA061 /* Products */,
+				A06E264E6B368B752BC44183 /* Pods */,
 				7CCF8ECBFCC9CB52B6233983 /* Frameworks */,
-				03F95B9D2CF2E4F8005F909F /* GoogleService-Info.plist */,
-				2894FA5EEACA8ABC525039B7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2236,12 +2235,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B9AA459D2C14546B005EA061 /* VideoSmash */ = {
+		B9AA459D2C14546B005EA061 /* Moves */ = {
 			isa = PBXGroup;
 			children = (
 				04A663C32CCC0BC20049C94A /* Animation */,
-				04196A6A2C16B61900747E77 /* VideoSmash.entitlements */,
-				03F0E1372CF74A5F00C2860F /* Info.plist */,
+				04196A6A2C16B61900747E77 /* Moves.entitlements */,
 				5A7FA2F02C83270C00A05C6D /* UIDevice */,
 				040CB54A2C736C7400DA6490 /* CoreData */,
 				04B275432C15DE46007B2722 /* API */,
@@ -2252,8 +2250,11 @@
 				0455EFAA2C14572000C8EC3E /* View */,
 				0455EFA92C14571500C8EC3E /* Delegate */,
 				B9AA45A72C14546E005EA061 /* Assets.xcassets */,
+				B9AA45AC2C14546E005EA061 /* Info.plist */,
+				52C7B4F72CFF1D4A0058F9DC /* GoogleService-Info.plist */,
+				52C7B4F92CFF314D0058F9DC /* lunch.jpg */,
 			);
-			path = VideoSmash;
+			path = Moves;
 			sourceTree = "<group>";
 		};
 		BF9CBF5C2C7386E00095D99F /* Extensions */ = {
@@ -2271,12 +2272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9AA45AF2C14546E005EA061 /* Build configuration list for PBXNativeTarget "Moves" */;
 			buildPhases = (
-				7BFAE4FA7A07FD1C436F21A3 /* [CP] Check Pods Manifest.lock */,
+				2EEE77195770C36E19E0ECAB /* [CP] Check Pods Manifest.lock */,
 				B9AA45972C14546B005EA061 /* Sources */,
 				B9AA45982C14546B005EA061 /* Frameworks */,
 				B9AA45992C14546B005EA061 /* Resources */,
-				103FFBA08A2ACEE7905F38B0 /* [CP] Embed Pods Frameworks */,
-				6C227390F672A58F6F507F38 /* [CP] Copy Pods Resources */,
+				D0D439827704166838F0C4E0 /* [CP] Embed Pods Frameworks */,
+				517E63FC0507673CE0672F86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2295,7 +2296,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					B9AA459A2C14546B005EA061 = {
 						CreatedOnToolsVersion = 13.0;
@@ -2312,9 +2313,6 @@
 				Base,
 			);
 			mainGroup = B9AA45922C14546B005EA061;
-			packageReferences = (
-				03F95B9C2CF186B9005F909F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
 			productRefGroup = B9AA459C2C14546B005EA061 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -2329,7 +2327,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03F95B9F2CF2FE42005F909F /* GoogleService-Info.plist in Resources */,
 				042C5EFB2C6D3AC30011D49D /* LocationSettingViewController.xib in Resources */,
 				04B0AB392C1B7912005AA587 /* VideoProfileCollectionViewCell.xib in Resources */,
 				04EEA72D2C1C2F86005278EA /* RequestVerificationViewController.xib in Resources */,
@@ -2370,6 +2367,7 @@
 				047DED112C5021FA00E6AEC3 /* VideoEditPopupViewController.xib in Resources */,
 				04A8678C2CC3C59E008A33AE /* FirstNameController.xib in Resources */,
 				04EEA7482C1C4662005278EA /* HashtagCollectionViewCell.xib in Resources */,
+				52C7B4FA2CFF314D0058F9DC /* lunch.jpg in Resources */,
 				046AFC0E2C17BF4B009C2ABC /* PhoneEmailSignInViewController.xib in Resources */,
 				5A1525B22C8F3DB1001C9E7C /* EmailPasswordController.xib in Resources */,
 				B9AA45A82C14546E005EA061 /* Assets.xcassets in Resources */,
@@ -2387,6 +2385,7 @@
 				04AE78882C8778BA00F15BA6 /* VideoShareViewController.xib in Resources */,
 				88B598772C198EE90099793C /* PostStatusViewController.xib in Resources */,
 				045A4B7D2C2D260400BF7CA3 /* FavouriteViewController.xib in Resources */,
+				52C7B4F82CFF1D4A0058F9DC /* GoogleService-Info.plist in Resources */,
 				047101FE2C16BDDC00AC538F /* FollowTableViewCell.xib in Resources */,
 				04EEA7822C1CE870005278EA /* SoundsTableViewCell.xib in Resources */,
 				04DB96182CC04F1F006DDDB5 /* HomeVideoCollectionViewCell.xib in Resources */,
@@ -2415,41 +2414,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		103FFBA08A2ACEE7905F38B0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6C227390F672A58F6F507F38 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BFAE4FA7A07FD1C436F21A3 /* [CP] Check Pods Manifest.lock */ = {
+		2EEE77195770C36E19E0ECAB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2469,6 +2434,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		517E63FC0507673CE0672F86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D439827704166838F0C4E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2527,6 +2526,7 @@
 				04C7E4482C39CB1900C48279 /* DeleteVideoRequest.swift in Sources */,
 				042893DA2C2B8FD7000D5903 /* ChangePhoneNoViewController.swift in Sources */,
 				04EEA7AF2C1E2AFC005278EA /* SegmentedProgressView.swift in Sources */,
+				52C7B4F62CFF176D0058F9DC /* Moves.xcdatamodeld in Sources */,
 				0455EFBE2C14580000C8EC3E /* GradientHorizontalProgressBar.swift in Sources */,
 				04B2755A2C15DE47007B2722 /* SearchHashtagModel.swift in Sources */,
 				0455EFBA2C14580000C8EC3E /* CustomButton.swift in Sources */,
@@ -2624,7 +2624,6 @@
 				04EEA77F2C1CE870005278EA /* HashtagsTableViewCell.swift in Sources */,
 				04EEA7452C1C4662005278EA /* EditProfileViewController.swift in Sources */,
 				045A4B782C2D152100BF7CA3 /* ShowVideoDetailModel.swift in Sources */,
-				03B205942CF0735000B29245 /* SmashVideos.xcdatamodel in Sources */,
 				040A6B182C275601008BF80C /* ForgetPasswordViewController.swift in Sources */,
 				047332342C31A48D003B01DF /* InboxTableViewCell.swift in Sources */,
 				4F8DC3222C9E271D00E55CF6 /* DataPersisted+CoreDataProperties.swift in Sources */,
@@ -2854,214 +2853,22 @@
 		};
 		B9AA45B02C14546E005EA061 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD806C68F16140EE0F33ABAD /* Pods-Moves.debug.xcconfig */;
+			baseConfigurationReference = 1BD9CDA3133FE83951A9D698 /* Pods-Moves.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = VideoSmash/VideoSmash.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Moves/Moves.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = AU9TZEAAWC;
 				EXCLUDED_ARCHS = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppCheckCore\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/BadgeControl\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaDebug\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CoreAnimator\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DPOTPView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DZNEmptyDataSet\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/EFInternetIndicator\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookCore\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookLogin\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookShare\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAppCheckInterop\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuthInterop\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreExtension\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreInternal\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestoreInternal\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFunctions\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessagingInterop\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseSharedSwift\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GSPlayer\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTProgressBar\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GrowingTextView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/JXSegmentedView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/KTVHTTPCache\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/MarqueeLabel\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/NextLevel\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PhoneNumberKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PryntTrimmerView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QCropper\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RecaptchaInterop\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SkeletonView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SteviaLayout\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftVideoGenerator\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyStoreKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/TextFieldFormatter\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/YPImagePicker\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZFPlayer\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZoomingTransition\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
-					"\"${PODS_ROOT}/AgoraRtcEngine_iOS\"",
-					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
-					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
-					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
-					"\"${PODS_ROOT}/GoogleMaps/Maps/Frameworks\"",
-					"\"${PODS_ROOT}/GooglePlaces/Frameworks\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AIAEC\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AIAECLL\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AINS\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AINSLL\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AudioBeauty\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ClearVision\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ContentInspect\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/FaceCapture\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/FaceDetection\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/LipSync\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ReplayKit\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/SpatialAudio\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VQA\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VideoAv1CodecDec\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VideoAv1CodecEnc\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VideoCodecDec\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VideoCodecEnc\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VirtualBackground\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/FirebaseAnalytics/AdIdSupport\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/AdIdSupport\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/WithoutAdIdSupport\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleMaps/Base\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleMaps/Maps\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GooglePlaces\"",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"COCOAPODS=1",
-					"$(inherited)",
-					"FBSDKCOCOAPODS=1",
-					"$(inherited)",
-					"PB_FIELD_32BIT=1",
-					"PB_NO_PACKED_STRUCTS=1",
-					"PB_ENABLE_MALLOC=1",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth/AppAuth.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppCheckCore/AppCheckCore.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/BadgeControl/BadgeControl.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaDebug/CocoaDebug.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CoreAnimator/CoreAnimator.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DPOTPView/DPOTPView.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/EFInternetIndicator/EFInternetIndicator.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit/FBSDKShareKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookCore/FacebookCore.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookLogin/FacebookLogin.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookShare/FacebookShare.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAppCheckInterop/FirebaseAppCheckInterop.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuthInterop/FirebaseAuthInterop.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreExtension/FirebaseCoreExtension.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase/FirebaseDatabase.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestoreInternal/FirebaseFirestoreInternal.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFunctions/FirebaseFunctions.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging/FirebaseMessaging.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessagingInterop/FirebaseMessagingInterop.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseSharedSwift/FirebaseSharedSwift.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage/FirebaseStorage.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GSPlayer/GSPlayer.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth/GTMAppAuth.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTProgressBar/GTProgressBar.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GrowingTextView/GrowingTextView.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/JXSegmentedView/JXSegmentedView.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/KTVHTTPCache/KTVHTTPCache.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/MarqueeLabel/MarqueeLabel.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/NextLevel/NextLevel.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PhoneNumberKit/PhoneNumberKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PryntTrimmerView/PryntTrimmerView.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QCropper/QCropper.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RecaptchaInterop/RecaptchaInterop.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SkeletonView/SkeletonView.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SteviaLayout/Stevia.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages/SwiftMessages.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftVideoGenerator/SwiftVideoGenerator.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/TextFieldFormatter/TextFieldFormatter.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift/Toast_Swift.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/YPImagePicker/YPImagePicker.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZFPlayer/ZFPlayer.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZoomingTransition/ZoomingTransition.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil/absl.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
-					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
-					"\"${PODS_ROOT}/Headers/Public/GooglePlaces\"",
-					"$(inherited)",
-					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
-				);
-				INFOPLIST_FILE = VideoSmash/Info.plist;
+				INFOPLIST_FILE = Moves/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Moves;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app access the camera to take their images";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app access our location to find nearby videos";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app access our location to find nearby people";
@@ -3077,13 +2884,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
-					/usr/lib/swift,
-					"$(SDKROOT)/usr/lib/swift",
-				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -3415,230 +3216,41 @@
 					"-weak_framework",
 					"\"UserNotifications\"",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.moves.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moves.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/VideoSmash/ViewController/VideoDetail/LIVEr-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Moves/ViewController/VideoDetail/LIVEr-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		B9AA45B12C14546E005EA061 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 190AECD0D1B83B575E596E10 /* Pods-Moves.release.xcconfig */;
+			baseConfigurationReference = 0A3C1140BC95ADCB7DBE6CD7 /* Pods-Moves.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = VideoSmash/VideoSmash.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Moves/Moves.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = AU9TZEAAWC;
 				EXCLUDED_ARCHS = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppCheckCore\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/BadgeControl\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CoreAnimator\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DPOTPView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DZNEmptyDataSet\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/EFInternetIndicator\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookCore\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookLogin\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookShare\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAppCheckInterop\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuthInterop\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreExtension\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreInternal\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestoreInternal\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFunctions\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessagingInterop\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseSharedSwift\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GSPlayer\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTProgressBar\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GrowingTextView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/JXSegmentedView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/KTVHTTPCache\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/MarqueeLabel\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/NextLevel\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PhoneNumberKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PryntTrimmerView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QCropper\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RecaptchaInterop\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SkeletonView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SteviaLayout\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftVideoGenerator\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyStoreKit\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/TextFieldFormatter\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/YPImagePicker\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZFPlayer\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZoomingTransition\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
-					"\"${PODS_ROOT}/AgoraRtcEngine_iOS\"",
-					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
-					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
-					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
-					"\"${PODS_ROOT}/GoogleMaps/Maps/Frameworks\"",
-					"\"${PODS_ROOT}/GooglePlaces/Frameworks\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AIAEC\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AIAECLL\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AINS\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AINSLL\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AudioBeauty\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ClearVision\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ContentInspect\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/FaceCapture\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/FaceDetection\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/LipSync\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ReplayKit\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/SpatialAudio\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VQA\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VideoAv1CodecDec\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VideoAv1CodecEnc\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VideoCodecDec\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VideoCodecEnc\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VirtualBackground\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/FirebaseAnalytics/AdIdSupport\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/AdIdSupport\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/WithoutAdIdSupport\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleMaps/Base\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleMaps/Maps\"",
-					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GooglePlaces\"",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"COCOAPODS=1",
-					"$(inherited)",
-					"FBSDKCOCOAPODS=1",
-					"$(inherited)",
-					"PB_FIELD_32BIT=1",
-					"PB_NO_PACKED_STRUCTS=1",
-					"PB_ENABLE_MALLOC=1",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth/AppAuth.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppCheckCore/AppCheckCore.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/BadgeControl/BadgeControl.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/CoreAnimator/CoreAnimator.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DPOTPView/DPOTPView.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/EFInternetIndicator/EFInternetIndicator.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit/FBSDKShareKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookCore/FacebookCore.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookLogin/FacebookLogin.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FacebookShare/FacebookShare.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAppCheckInterop/FirebaseAppCheckInterop.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuthInterop/FirebaseAuthInterop.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreExtension/FirebaseCoreExtension.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase/FirebaseDatabase.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestoreInternal/FirebaseFirestoreInternal.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFunctions/FirebaseFunctions.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging/FirebaseMessaging.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessagingInterop/FirebaseMessagingInterop.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseSharedSwift/FirebaseSharedSwift.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage/FirebaseStorage.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GSPlayer/GSPlayer.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth/GTMAppAuth.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTProgressBar/GTProgressBar.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GrowingTextView/GrowingTextView.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/JXSegmentedView/JXSegmentedView.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/KTVHTTPCache/KTVHTTPCache.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/MarqueeLabel/MarqueeLabel.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/NextLevel/NextLevel.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PhoneNumberKit/PhoneNumberKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PryntTrimmerView/PryntTrimmerView.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/QCropper/QCropper.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RecaptchaInterop/RecaptchaInterop.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SkeletonView/SkeletonView.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SteviaLayout/Stevia.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages/SwiftMessages.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftVideoGenerator/SwiftVideoGenerator.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/TextFieldFormatter/TextFieldFormatter.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift/Toast_Swift.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/YPImagePicker/YPImagePicker.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZFPlayer/ZFPlayer.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/ZoomingTransition/ZoomingTransition.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil/absl.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
-					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
-					"\"${PODS_ROOT}/Headers/Public/GooglePlaces\"",
-					"$(inherited)",
-					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
-				);
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth/AppAuth.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppCheckCore/AppCheckCore.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/BadgeControl/BadgeControl.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers\"",
@@ -3690,9 +3302,17 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SkeletonView/SkeletonView.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SteviaLayout/Stevia.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StreamChat/StreamChat.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StreamChatUI/StreamChatUI.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripeApplePay/StripeApplePay.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripeCore/StripeCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripePaymentSheet/StripePaymentSheet.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripePayments/StripePayments.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripePaymentsUI/StripePaymentsUI.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/StripeUICore/StripeUICore.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages/SwiftMessages.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftVideoGenerator/SwiftVideoGenerator.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/TextFieldFormatter/TextFieldFormatter.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift/Toast_Swift.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/YPImagePicker/YPImagePicker.framework/Headers\"",
@@ -3702,18 +3322,13 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
 					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
 					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
 					"\"${PODS_ROOT}/Headers/Public/GooglePlaces\"",
-					"$(inherited)",
-					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
 				);
-				INFOPLIST_FILE = VideoSmash/Info.plist;
+				INFOPLIST_FILE = Moves/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Moves;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app access the camera to take their images";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app access our location to find nearby videos";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app access our location to find nearby people";
@@ -3729,13 +3344,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
-					/usr/lib/swift,
-					"$(SDKROOT)/usr/lib/swift",
-				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -4061,16 +3670,17 @@
 					"-weak_framework",
 					"\"UserNotifications\"",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.moves.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moves.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/VideoSmash/ViewController/VideoDetail/LIVEr-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Moves/ViewController/VideoDetail/LIVEr-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -4097,16 +3707,18 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		03F95B9C2CF186B9005F909F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.5.0;
-			};
+/* Begin XCVersionGroup section */
+		52C7B4F42CFF176D0058F9DC /* Moves.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52C7B4F52CFF176D0058F9DC /* Moves.xcdatamodel */,
+			);
+			currentVersion = 52C7B4F52CFF176D0058F9DC /* Moves.xcdatamodel */;
+			path = Moves.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCVersionGroup section */
 	};
 	rootObject = B9AA45932C14546B005EA061 /* Project object */;
 }

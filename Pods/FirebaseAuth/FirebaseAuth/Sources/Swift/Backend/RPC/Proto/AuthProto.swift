@@ -14,6 +14,7 @@
 
 import Foundation
 
-protocol AuthProto {
+@objc protocol AuthProto: NSObjectProtocol {
   init(dictionary: [String: AnyHashable])
+  @objc optional var dictionary: [String: AnyHashable] { get }
 }

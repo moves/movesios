@@ -129,7 +129,9 @@ extension AuthTokenResult: NSSecureCoding {}
 
   private static let kTokenKey = "token"
 
-  public static let supportsSecureCoding = true
+  public static var supportsSecureCoding: Bool {
+    return true
+  }
 
   public func encode(with coder: NSCoder) {
     coder.encode(token, forKey: AuthTokenResult.kTokenKey)
