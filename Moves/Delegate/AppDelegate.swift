@@ -41,9 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             }
         }
         self.notificationConfig(application)
+
+        
         return true
     }
-    
     func notificationConfig(_ application: UIApplication) {
         UIApplication.shared.isStatusBarHidden = false
         UIApplication.shared.statusBarStyle = .darkContent

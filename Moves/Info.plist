@@ -13,6 +13,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>fb2046977585815441</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
 				<string>com.googleusercontent.apps.693521363113-beci94n43gok3ikjmf782bq5981pg9gj</string>
 			</array>
 		</dict>
@@ -45,6 +53,10 @@
 			<array/>
 		</dict>
 	</array>
+	<key>FacebookAppID</key>
+	<string>2046977585815441</string>
+	<key>FacebookDisplayName</key>
+	<string>Moves</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<string>false</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
